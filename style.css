@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&family=Roboto:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;800&display=swap');
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+outline: 0;
+}
+html {
+  /* valor de root de font-size é 10px */
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100vh;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+li, a, button {
+font-family: 'Roboto', sans-serif;
+font-weight: 300px;
+font-size: 1.6rem;
+color: #edf0f1;
+text-decoration: none;
+
+}
+a.logo {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2.0rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500px;
+  letter-spacing: 4px;
+}
+a:hover{
+  text-decoration: none;
+  color: #0cf574;
+}
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+align-items: center;
+padding: 30px 9.5%;
+background-color: #272932;
+height: 8vh;
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+}
+.nav-list li {
+padding: 0px 20px;
+}
+.nav-list li a{
+  transition: all 0.2s ease 0s;
+}
+.nav-list a:hover{
+color: #0cf574;
+}
+.section-one .content h1{
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  font-size: 5.0rem;
+  padding: 7.0rem;
+}
+
+.card h2 {
+  text-decoration: none;
+  text-align: center;
+  color: #26272B;
+  padding: 2.0rem;
+  font-size: 2.0rem;
+}
+
+h3{
+  font-size: 3rem; 
+  color: #edf0f1;
+  padding: 2.0rem;
+}
+p {
+  font-size: 1.6rem;
+  font-family: 'roboto', sans-serif ;
+  color: #edf0f1;
+  line-height: 3.0rem;
+  margin: 0rem 2.0rem 0rem;
+}
+.card p {
+  color: #272932;
+}
+.section-three .content{
+  background-color: #fff;
+  height: 100vh;
+}
+@media (max-width: 600px) {
+  p.p2 {
+    padding-bottom: 2rem;
+  }
+  .section-two {
+    text-align: center;
+    height: min-content;
+  }
+}
+@media (max-width: 430px) {
+  .section-one .content h1{
+    height: 70vh;
+  }
+  h1 {
+    font-size: 4rem;
+    
+  }
+  h2 p {
+    align-items: center;
+  }
+  p.p2 {
+    padding-bottom: 2rem;
+  }
+  .section-two {
+    text-align: center;
+    height: min-content;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    padding: 6.5rem;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+} 
